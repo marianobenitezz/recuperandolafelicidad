@@ -49,13 +49,19 @@ a {
 } 
 
 .first-bg {
-    width: 100%;
-    max-width: 1000px;
-    height: 600px;
+    width: max-content;
     margin: auto;
-    border-radius: 50px;
-    background-size: cover;
-    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.first-bg .tarotista {
+    width: 400px;
+    transition: .3s ease;
+}
+
+.first-bg .tarotista:hover {
+    transform: scale(1.1);
 }
 
 .consulta {
