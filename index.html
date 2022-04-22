@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/corazon.ico">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +18,367 @@
     <title>Recupera tu Felicidad: Amarres de Amor</title>
     <meta property="og:description"
         content="Licenciada Martina Ocampo te ayudara a solucionar todos tus problemas. Vidente natural y tarotista.">
+
+    <style>
+        
+        body {
+            background-color: #c6a1ff;
+            font-family: 'Roboto Slab', serif;
+            /* font-family: 'Merriweather', serif */;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .wp-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .wp-fixed img {
+            width: 50px;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        } 
+
+        .lic {
+            text-align: center;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0px;
+        }
+
+        .title h1 {
+            font-weight: 700 ;
+        }
+
+        .title img {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+        } 
+
+        .first-bg {
+            width: max-content;
+            margin: auto;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .first-bg .tarotista {
+            width: 400px;
+            transition: .3s ease;
+        }
+
+        .first-bg .tarotista:hover {
+            transform: scale(1.1);
+        }
+
+        .consulta {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .consulta img  {
+            width: 300px;
+        }
+
+        .consulta h1 {
+            margin: 50px 0px;
+        }
+
+        .consulta span {
+            font-family: 'Merriweather', serif;
+            margin-top: 20px;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .title-astro {
+            max-width: 1200px;
+            margin: 50px auto;
+            line-height: 40px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .trabajos .title {
+            margin: 100px 0px;
+        }
+
+        .trabajos ul {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+
+        .trabajos ul li {
+            font-size: 20px;
+            list-style-type: none;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .trabajos img {
+            width: 50px;
+            margin-bottom: 5px;
+        }
+
+        .servicios {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .servicios .title {
+            margin: 100px 0px 50px 0px;
+        }
+
+        .servicios ul li {
+            list-style-type: none;
+            font-size: 20px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .servicios ul img {
+            width: 20px;
+            margin: 0px 10px;
+        }
+
+        .testimonios ul li {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .testimonios ul li .nombre {
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .testimonios ul li .desc {
+            font-size: 18px;
+            font-weight: 400;
+            font-style: italic;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .form-container {
+            margin: auto;
+            max-width: 600px;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin: 100px auto 50px auto;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container form input, .form-container form textarea {
+            margin-bottom: 20px;
+            border: none;
+            resize: none;
+            height: 60px;
+            padding: 0px 20px;
+            border-radius: 5px;
+        }
+
+        .form-container form input::placeholder {
+            color: #000;
+            font-family: 'Roboto Slab', serif;
+            opacity: .6;
+            font-size: 16px;
+        }
+
+        .form-container form button {
+            width: 120px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background: #000;
+            margin: auto;
+
+            font-family: 'Roboto Slab', serif;
+            font-weight: 500;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .form-container form button:hover {
+            cursor: pointer;
+        }
+
+        .footer {
+            margin-top: 150px;
+            background-image: url("./assets/tarot2.webp");
+            width: 100%;
+            height: 600px;
+            background-color: #fff;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .footer img {
+            position: absolute;
+            width: 400px;
+            border-radius: 20px;
+            left: 50%;
+            margin-left: -200px;
+            top: 100px;
+        }
+
+        .footer h1 {
+            color: white;
+            font-weight: 300;
+            font-size: 20px;
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .first-bg-container {
+                padding: 0px 20px;
+            }
+
+            .first-bg-container .first-bg {
+                height: 300px;
+            }
+
+            .title {
+                margin-bottom: 20px;
+                flex-direction: column;
+            }
+
+            .title h1 {
+                font-size: 20px;
+            }
+
+            .lic {
+                font-size: 24px;
+            }
+
+            .consulta h1 {
+                font-size: 30px;
+            }
+
+            .consulta img {
+                width: 150px;
+            }
+
+            .title-astro {
+                padding: 0px 20px;
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 0px;
+            }
+
+            .trabajos .title {
+                margin: 50px 0px;
+            }
+
+            .trabajos ul {
+                height: 300px;
+            }
+            
+            .trabajos ul li img {
+                width: 30px;
+                margin: 0px 10px 0px 0px;
+            }
+
+            .trabajos ul li {
+                flex-direction: row;
+                text-align: start;
+            }
+            
+            .trabajos ul {
+                padding: 0px;
+            }
+
+            .servicios .title {
+                margin: 50px 0px;
+                font-size: 30px;
+            }
+
+            .servicios ul li {
+                font-size: 14px;
+            }
+
+            .servicios ul li img {
+                width: 20px;
+            }
+
+            .testimonios ul li .desc {
+                font-size: 14px;
+                line-height: 30px;
+                padding: 0px 20px;
+            }
+
+            .form-container .title {
+                margin-top: 50px;
+            }
+
+            form {
+                padding: 0px 20px;
+            }
+
+            .footer img {
+                width: 300px;
+                margin-left: -150px;
+            }
+
+            .first-title {
+                margin: 50px 0px;
+            }
+
+            .first-title h1 {
+                font-size: 30px;
+            }
+
+        }
+
+
+
+    </style>
+        
 </head>
 <body>
 
     <div class="wp-fixed">
-        <a href="https://api.whatsapp.com/send?phone=+5493513523269" target="_blank">
+        <a class="linkWp" target="_blank">
             <img src="./assets/wpp.webp" alt="WHATSAPP LOGO IMAGEN">
         </a>
     </div>
@@ -42,7 +398,7 @@
 
     <article class="consulta">
         <h2>Realice su consulta Aquí</h2>
-        <a href="https://api.whatsapp.com/send?phone=+5493513523269" target="_blank">
+        <a class="linkWp" target="_blank">
             <img src="./assets/wpp.webp" alt="WHATSAPP LOGO">
         </a>
         <span>Atención a mayores de 18 años!</span>
@@ -71,10 +427,10 @@
     <article class="servicios">
         <h2 class="title">Sobre nuestros servicios:</h2>
         <ul>
-            <li><img src="./assets/flechanegra.webp" alt="FLECHA NEGRA"> Privacidad y cofidencialidad <img src="./assets/flechanegra.webp" alt="FLECHA NEGRA"></li>
-            <li><img src="./assets/flechanegra.webp" alt="FLECHA NEGRA"> Atención y respuesta inmediata <img src="./assets/flechanegra.webp" alt="FLECHA NEGRA"></li>
-            <li><img src="./assets/flechanegra.webp" alt="FLECHA NEGRA"> Atención solo a mayores de 18 años! <img src="./assets/flechanegra.webp" alt="FLECHA NEGRA"></li>
-            <li><img src="./assets/flechanegra.webp" alt="FLECHA NEGRA"> Pague UNICAMENTE si usted queda conforme con los resultados <img src="./assets/flechanegra.webp" alt="FLECHA NEGRA"></li>
+            <li><img src="./assets/flechanegra.png" alt="FLECHA NEGRA"> Privacidad y cofidencialidad <img src="./assets/flechanegra.png" alt="FLECHA NEGRA"></li>
+            <li><img src="./assets/flechanegra.png" alt="FLECHA NEGRA"> Atención y respuesta inmediata <img src="./assets/flechanegra.png" alt="FLECHA NEGRA"></li>
+            <li><img src="./assets/flechanegra.png" alt="FLECHA NEGRA"> Atención solo a mayores de 18 años! <img src="./assets/flechanegra.png" alt="FLECHA NEGRA"></li>
+            <li><img src="./assets/flechanegra.png" alt="FLECHA NEGRA"> Pague UNICAMENTE si usted queda conforme con los resultados <img src="./assets/flechanegra.png" alt="FLECHA NEGRA"></li>
         </ul>
     </article>
 
@@ -122,6 +478,18 @@
         <h1>Al utilizar este sitio web o contratar cualquiera de nuestros servicios, usted acepta atenerse a los <a href="/recuperandolafelicidad/terminos">Términos y
         Condiciones</a> de nuestra firma</h1>
     </div>
+
+    <script>
+        const json = fetch('./numero.json')
+        .then(json => json.json())
+        .then((numero) => {
+            let links = document.querySelectorAll('.linkWp')
+            let linksArray = Array.from(links)
+            linksArray.forEach(link => {
+                link.setAttribute("href", `https://api.whatsapp.com/send?phone=${numero.numero}`) 
+            })
+        })
+    </script>
 
 </body>
 </html>
