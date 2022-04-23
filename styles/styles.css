@@ -125,6 +125,7 @@ a {
     font-size: clamp(20px, 4vw, 30px) !important;
     font-style: italic;
     margin: 20px 0px;
+    font-weight: 1000;
 }
 
 .title-astro {
